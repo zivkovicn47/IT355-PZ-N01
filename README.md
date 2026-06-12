@@ -36,3 +36,63 @@ Da biste pokrenuli aplikaciju lokalno, pratite sledeće korake:
    ```
 4. Aplikaciju možete otvoriti u pretraživaču na adresi:
    [http://localhost:8080](http://localhost:8080)
+
+## Uputstvo za korišćenje
+
+### Početna strana (Dashboard)
+Nakon pokretanja, otvorite `http://localhost:8080` u pretraživaču. Prikazuje se početna strana sa navigacijom do svih modula sistema. Navigacioni meni se nalazi na vrhu svake strane i sadrži linkove: **Projekti**, **Komponente**, **Inženjeri**, **Licence**, **Zadaci**.
+
+---
+
+### Upravljanje projektima (`/projekti`)
+| Akcija | Opis |
+|---|---|
+| Pregled liste | Kliknite **Projekti** u navigaciji — prikazuje se tabela sa svim projektima (naziv, klijent, status). |
+| Dodavanje | Kliknite dugme **Novi projekat**, popunite formu (naziv, klijent, status) i kliknite **Sačuvaj**. |
+| Izmena | U tabeli, kliknite **Izmeni** pored željenog projekta, izmenite polja i sačuvajte. |
+| Brisanje | U tabeli, kliknite **Obriši** pored željenog projekta. Brisanje je trenutno bez potvrde. |
+
+---
+
+### Upravljanje komponentama (`/komponente`)
+| Akcija | Opis |
+|---|---|
+| Pregled liste | Kliknite **Komponente** u navigaciji — prikazuje se tabela (naziv, serijski broj, proizvođač, status). |
+| Dodavanje | Kliknite **Nova komponenta**, popunite formu i sačuvajte. |
+| Izmena | Kliknite **Izmeni** pored komponente, izmenite i sačuvajte. |
+| Brisanje | Kliknite **Obriši** pored komponente. |
+
+---
+
+### Upravljanje inženjerima (`/inzenjeri`)
+| Akcija | Opis |
+|---|---|
+| Pregled liste | Kliknite **Inženjeri** — tabela prikazuje ime, prezime, email i ulogu svakog inženjera. |
+| Dodavanje | Kliknite **Novi inženjer**, unesite podatke (ime, prezime, email, uloga) i sačuvajte. |
+| Izmena | Kliknite **Izmeni**, izmenite podatke i sačuvajte. |
+| Brisanje | Kliknite **Obriši** pored inženjera. |
+
+---
+
+### Upravljanje licencama (`/licence`)
+| Akcija | Opis |
+|---|---|
+| Pregled liste | Kliknite **Licence** — tabela prikazuje naziv softvera, ključ licence, tip i status aktivnosti. |
+| Dodavanje | Kliknite **Nova licenca**, unesite naziv softvera, ključ, tip i da li je aktivna, zatim sačuvajte. |
+| Izmena | Kliknite **Izmeni**, izmenite i sačuvajte. |
+| Brisanje | Kliknite **Obriši** pored licence. |
+
+---
+
+### Upravljanje zadacima (`/zadaci`)
+| Akcija | Opis |
+|---|---|
+| Pregled liste | Kliknite **Zadaci** — tabela prikazuje opis zadatka, naziv projekta, ime inženjera i status završenosti. |
+| Dodavanje | Kliknite **Novi zadatak**, unesite opis, izaberite projekat i inženjera iz padajućih listi, označite da li je završen i sačuvajte. |
+| Izmena | Kliknite **Izmeni**, izmenite podatke i sačuvajte. |
+| Brisanje | Kliknite **Obriši** pored zadatka. |
+
+---
+
+### Napomena o podacima
+Aplikacija se pokreće sa unapred učitanim test-podacima (3 inženjera, 2 projekta, 3 komponente, 2 licence, 3 zadatka). Svi podaci se čuvaju u memoriji aplikacije (`@ApplicationScope`) i resetuju se pri svakom ponovnom pokretanju servera.

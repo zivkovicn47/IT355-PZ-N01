@@ -1,12 +1,14 @@
 package com.metropolitan.it355pz.repository;
 
 import com.metropolitan.it355pz.model.*;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.ApplicationScope;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository
+@Component
+@ApplicationScope
 public class InMemoryRepository {
 
     private final List<Komponenta> komponente = new ArrayList<>();

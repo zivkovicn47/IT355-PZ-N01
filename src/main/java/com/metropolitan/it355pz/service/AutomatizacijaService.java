@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class AutomatizacijaService {
+public class AutomatizacijaService implements IAutomatizacijaService {
 
     private final InMemoryRepository repository;
 

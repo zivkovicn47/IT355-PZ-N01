@@ -1,7 +1,7 @@
 package com.metropolitan.it355pz.controller;
 
 import com.metropolitan.it355pz.model.Zadatak;
-import com.metropolitan.it355pz.service.AutomatizacijaService;
+import com.metropolitan.it355pz.service.IAutomatizacijaService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/zadaci")
 public class ZadatakController {
 
-    private final AutomatizacijaService service;
+    private final IAutomatizacijaService service;
 
-    public ZadatakController(AutomatizacijaService service) {
+    public ZadatakController(IAutomatizacijaService service) {
         this.service = service;
     }
 
